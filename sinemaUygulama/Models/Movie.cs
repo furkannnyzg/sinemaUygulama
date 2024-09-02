@@ -19,7 +19,7 @@ namespace sinemaUygulama.Models
         public string minute { get; set; }
         public decimal  price { get; set; }
         public Category category { get; set; }
-        List<Session> sessions { get; set; }
+        public List<Session> sessions { get; set; }
 
         private void SetDefaultSessions()
         {

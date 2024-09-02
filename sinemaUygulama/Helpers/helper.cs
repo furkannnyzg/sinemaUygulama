@@ -49,7 +49,7 @@ namespace sinemaUygulama.Helpers
                 minute="2 Saat",
                 price=100,
                 category=Category.gerilim,
-                picture_path=basepath+"mahserindorttatilisi.jpg"
+                picture_path=basepath+"mahserindorttatlisi.jpg"
                 },
                 new Movie(){
                 MovieName="Sezercik",
