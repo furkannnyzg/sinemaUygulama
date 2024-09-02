@@ -19,7 +19,7 @@ namespace sinemaUygulama.Models
         public string minute { get; set; }
         public decimal  price { get; set; }
         public Category category { get; set; }
-        List<Session> sessions { get; set; }
+        public List<Session> sessions { get; set; }
 
         private void SetDefaultSessions()
         {
@@ -28,6 +28,7 @@ namespace sinemaUygulama.Models
             TimeSpan ts=new TimeSpan(10,30,0);
 
             for (int i = 0; i < 3; i++) {
+                //3 günlük gün içerisinde 3 session olacak şekilde
                 currentDate = currentDate.Date + ts;
                 for (int j = 0; j < 3; j++) {
                 Session session = new Session();
