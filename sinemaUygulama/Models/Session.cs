@@ -29,6 +29,7 @@ namespace sinemaUygulama.Models
                
                     chair chair = new chair(row,number);
                     chairs.Add(chair);
+                                
                 }
             }
         

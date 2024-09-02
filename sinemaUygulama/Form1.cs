@@ -1,4 +1,6 @@
-﻿using System;
+﻿using sinemaUygulama.Helpers;
+using sinemaUygulama.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,12 @@ namespace sinemaUygulama
         public Form1()
         {
             InitializeComponent();
+        }
+        List<Movie> movies;
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            movies = helper.CreateMovies();
         }
     }
 }

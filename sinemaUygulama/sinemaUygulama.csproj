@@ -53,6 +53,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\helper.cs" />
     <Compile Include="Models\BaseClass.cs" />
     <Compile Include="Models\chair.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -60,6 +61,9 @@
     <Compile Include="Models\Session.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,6 +85,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="pictures\usturakemal.jpg" />
+    <Content Include="pictures\kral.jpg" />
+    <Content Include="pictures\keloglan.jpg" />
+    <Content Include="pictures\hobbit.jpg" />
+    <Content Include="pictures\sezercik.jpg" />
+    <Content Include="pictures\mahserindorttatlisi.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
